@@ -1,1 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+    <div class="container">
+        <h1 class="container-box">Eddie's Calculator</h1>
+            <table class="calculator-1">
+            <tr>
+                <td><button onclick="punch(7)">7</button></td>
+                <td><button onclick="punch(8)">8</button></td>
+                <td><button onclick="punch(9)">9</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="punch(4)">4</button></td>
+                <td><button onclick="punch(5)">5</button></td>
+                <td><button onclick="punch(6)">6</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="punch(1)">1</button></td>
+                <td><button onclick="punch(2)">2</button></td>
+                <td><button onclick="punch(3)">3</button></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td id="zero"><button onclick="punch(0)">0</button></td>
+                <td></td>
+            </tr>
+            </table>
+            <table class="calculator-2">
+                <tr>
+                    <td><button onclick="divide()">&#247;</button></td>
+                    <td><button onclick="multiply()">&#215;</button></td>
+                    <td><button onclick="subtract()">&#8722;</button></td>
+                    <td><button onclick="add()">&#43;</button></td>
+                </tr>
+            </table>
+            <table class="calculator-3">
+                <tr>
+                    <td><button onclick="punchx(7)">7</button></td>
+                    <td><button onclick="punchx(8)">8</button></td>
+                    <td><button onclick="punchx(9)">9</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="punchx(4)">4</button></td>
+                    <td><button onclick="punchx(5)">5</button></td>
+                    <td><button onclick="punchx(6)">6</button></td>
+                 </tr>
+                <tr>
+                    <td><button onclick="punchx(1)">1</button></td>
+                    <td><button onclick="punchx(2)">2</button></td>
+                    <td><button onclick="punchx(3)">3</button></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td id="zero"><button onclick="punchx(0)">0</button></td>
+                    <td></td>
+                </tr>
+            </table>
+            <table class="calculator-4">
+                <tr>
+                    <td><button onclick="equals()">=</button></td>
+                </tr>
+            </table>
+        <h1 class="answer" id="final">0</h1>
+            <table class="reset">
+            <tr>
+                <td><button onclick="reset()">Reset</button></td>
+            </tr>
+            </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
